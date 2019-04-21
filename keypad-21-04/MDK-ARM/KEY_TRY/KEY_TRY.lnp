@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"key_try\startup_stm32f303xe.o"
+"key_try\my_keypad4x4.o"
+"key_try\main.o"
+"key_try\stm32f3xx_it.o"
+"key_try\stm32f3xx_hal_msp.o"
+"key_try\stm32f3xx_hal_tim.o"
+"key_try\stm32f3xx_hal_tim_ex.o"
+"key_try\stm32f3xx_hal.o"
+"key_try\stm32f3xx_hal_rcc.o"
+"key_try\stm32f3xx_hal_rcc_ex.o"
+"key_try\stm32f3xx_hal_gpio.o"
+"key_try\stm32f3xx_hal_dma.o"
+"key_try\stm32f3xx_hal_cortex.o"
+"key_try\stm32f3xx_hal_pwr.o"
+"key_try\stm32f3xx_hal_pwr_ex.o"
+"key_try\stm32f3xx_hal_flash.o"
+"key_try\stm32f3xx_hal_flash_ex.o"
+"key_try\stm32f3xx_hal_i2c.o"
+"key_try\stm32f3xx_hal_i2c_ex.o"
+"key_try\system_stm32f3xx.o"
+--library_type=microlib --strict --scatter "KEY_TRY\KEY_TRY.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "KEY_TRY.map" -o KEY_TRY\KEY_TRY.axf
